@@ -1,3 +1,5 @@
+<!-- -*- mode: html+; tab-width: 8; -*- -->
+<!DOCTYPE html>
 <html>
   <head>
     <style>
@@ -8,6 +10,7 @@
 
       body {
 	  background-color: #222;
+	  font-size: 16px;
       }
 
       h1 {
@@ -33,8 +36,20 @@
 	  margin: 1em;
       }
 
+      figure {
+	  display: flex;
+	  flex-flow: row;
+      }
+
+      figcaption {
+	  padding: 3px;
+	  text-align: center;
+      }
+
       .section {
 	  margin: 3em;
+	  padding: 1em;
+	  background: #333;
       }
 
       .footer {
@@ -48,34 +63,34 @@
     <h1>Takeout</h1>
     <div class="section">
       <div>
-	Takeout is a copyleft media service that indexes organized media files in S3
-	buckets using MusicBrainz, Last.fm, Fanart.tv, and The Movie Database to make
-	media available for streaming using a mobile app, TV app, web interface and
-	VLC. Media is browsed using the Takeout server and streamed directly from S3
-	using pre-signed time-based URLs.
+	Takeout is a copyleft media service that indexes organized media files
+	in S3 buckets using MusicBrainz, Last.fm, Fanart.tv, and The Movie
+	Database to make media available for streaming using a mobile app, TV
+	app, web interface and VLC. Media is browsed using the Takeout server
+	and streamed directly from S3 using pre-signed time-based URLs.
       </div>
       <div>
-	All software is available on github at these respositories:
+	All software is available on github in these respositories:
 	<ul>
-	  <li><a href="https://github.com/defsub/takeout">Takeout server</a></li>
-	  <li><a href="https://github.com/defsub/takeout_app">Takeout app</a></li>
-	  <li><a href="https://github.com/defsub/tv-samples">Takeout Android TV app</a></li>
+	  <li><a href="https://github.com/defsub/takeout">Takeout Server</a> (written in Go)</li>
+	  <li><a href="https://github.com/defsub/takeout_app">Takeout Android/iOS App</a> (written in Dart/Flutter)</li>
+	  <li><a href="https://github.com/defsub/tv-samples">Android TV App</a> (written in Java/Kotlin)</li>
 	</ul>
 	See a few <a href="images/deployment.png">deployment options</a> to learn more.
       </div>
     </div>
     <div class="section">
-      <h2>Music Screens</h2>
+      <h2>App Music Screens</h2>
       <div>
-	<a href="images/takeout_music_full.png"><img src="images/takeout_music_thumb.png"/></a>
-	<a href="images/takeout_artist_full.png"><img src="images/takeout_artist_thumb.png"/></a>
-	<a href="images/takeout_player_full.png"><img src="images/takeout_player_thumb.png"/></a>
-	<a href="images/takeout_radio_full.png"><img src="images/takeout_radio_thumb.png"/></a>
-	<a href="images/takeout_downloads_full.png"><img src="images/takeout_downloads_thumb.png"/></a>
+	<a href="images/takeout_music_full.png"><img src="images/takeout_music_thumb.png" alt="music home screen"/></a>
+	<a href="images/takeout_artist_full.png"><img src="images/takeout_artist_thumb.png" alt="artist screen"/></a>
+	<a href="images/takeout_player_full.png"><img src="images/takeout_player_thumb.png" alt="music player"/></a>
+	<a href="images/takeout_radio_full.png"><img src="images/takeout_radio_thumb.png" alt="internet radio"/></a>
+	<a href="images/takeout_downloads_full.png"><img src="images/takeout_downloads_thumb.png" alt="downloads screen"/></a>
       </div>
     </div>
     <div class="section">
-      <h2>Video Screens</h2>
+      <h2>App Video Screens</h2>
       <div>
 	<a href="images/takeout_video_full.png"><img src="images/takeout_video_thumb.png"/></a>
 	<a href="images/takeout_movie_full.png"><img src="images/takeout_movie_thumb.png"/></a>
@@ -83,7 +98,7 @@
       </div>
     </div>
     <div class="section">
-      <h2>Podcasts Screens</h2>
+      <h2>App Podcasts Screens</h2>
       <div>
 	<a href="images/takeout_podcast_full.png"><img src="images/takeout_podcast_thumb.png"/></a>
 	<a href="images/takeout_progress_full.png"><img src="images/takeout_progress_thumb.png"/></a>
